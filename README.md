@@ -1,3 +1,3 @@
-# Mockups del proyecto final
+# Diseño
 
-Prototipos recreados en HTML
+En este branch se hacen modificaciones a los mockups antes de enviarlos a la rama principal
