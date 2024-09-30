@@ -4,12 +4,83 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh;/* Estilos generales para el contenedor de la aplicación */
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    
+      /* Estilos para el encabezado */
+    .app-header {
+        background-color: #d67519; /* Verde */
+        color: white;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+      /* Estilos para el contenido */
+    .app-content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+      /* Estilos para el formulario de inicio de sesión */
+    .login-container {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    
+    .login-container button[type="submit"] {
+        background-color: #d67519; /* Verde */
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    .login-container button[type="submit"]:hover {
+        opacity: 0.8;
+    }
+    
+      /* Estilos para el pie de página */
+    .app-footer {
+        background-color: #d67519; /* Verde */
+        color: white;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .login-container{
     background: rgb(232, 162, 132);
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba( 0, 0, 0, 0.1);
 }
@@ -33,4 +104,7 @@ body{
     border: none;
     border-radius: 2 px;
     cursor: pointer;
+}
+.img{
+    text-align: center;
 }

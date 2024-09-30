@@ -1,20 +1,35 @@
 <!-- Autoria: Daniel Quintero -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa</title>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Iniciar Sesión</h2>
-    <form action="/login" method="POST">
-        <input type="text" name="username" placeholder="Nombre de usuario" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Entrar</button>
-    </form>
-  </div>  
+    <!-- Agregamos un contenedor para la aplicación móvil -->
+    <div class="app-container">
+        <!-- Agregamos un encabezado para la aplicación -->
+        <header class="app-header">
+            <h1>Iniciar Sesión</h1>
+        </header>
+    
+        <!-- Agregamos un contenedor para el contenido de la aplicación -->
+        <div class="app-content">
+            <!-- Agregamos el formulario de inicio de sesión -->
+            <div class="login-container">
+                <img src="logoApp.jpeg" width="280" height="280" class="img">
+                <form action="/login" method="POST">
+                    <input type="text" name="username" placeholder="Nombre de usuario" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+        <!-- Agregamos un pie de página para la aplicación -->
+        <footer class="app-footer">
+            <p>Safe Kitty Map</p>
+        </footer>
+    </div>
 </body>
 </html>
